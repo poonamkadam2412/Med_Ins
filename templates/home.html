@@ -11,7 +11,7 @@
 <body style="background-color: rgb(228, 189, 210);">
     <center>
         <h1> Medical Insurance Charges Prediction </h1>
-        <form method="get" action="/insurance">
+        <form method="post" action="/prediction">
             <!-- Headings for the form -->
             <div class="headingsContainer">
                 <h3 style="color:rgb(197, 70, 146);">Get Your Medical Insurance In Single Click</h3>
@@ -22,8 +22,8 @@
                 <label for="age" style="color:rgb(255, 71, 240);">Your Age</label><br>
                 <input type="number" placeholder="Enter Age" name="age" required>
                 <br><br>
-                <label for="sex" style="color:rgb(255, 71, 197);">Your Gender</label><br>
-                <select placeholder="Enter Gender" name="sex" style="width: 180px;" required>
+                <label for="gender" style="color:rgb(255, 71, 197);">Your Gender</label><br>
+                <select placeholder="Enter Gender" name="gender" style="width: 180px;" required>
                   <option></option>
                   <option value = "male">male</option>
                   <option value = "female">female</option>
@@ -39,14 +39,14 @@
                 <label style="color:rgb(132, 110, 185);">Yes:</label> <input type = "radio" name= "smoker" value = "yes">
                 <label style="color:rgb(132, 110, 185);">No:</label> <input type = "radio" name= "smoker" value = "no">
                 <br><br>
-                <label for="region" style="color:rgb(255, 71, 218);">Your Region</label><br>
+                <!-- <label for="region" style="color:rgb(255, 71, 218);">Your Region</label><br>
                 <select placeholder="Enter Region" name="region" style="width: 180px;" required>
                     <option></option>
                     <option value = "northeast">northeast</option>
                     <option value = "southeast">southeast</option>
                     <option value = "northwest">northwest</option>
                     <option value = "southwest">southwest</option>
-                </select>
+                </select> -->
     
                 <br><br>
                 <!-- Submit button -->

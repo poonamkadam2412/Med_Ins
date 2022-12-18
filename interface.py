@@ -11,7 +11,7 @@ def hello_flask():
     print("Welcome to Medicle Insurance Charges Prediction")
     return render_template("home.html")
 
-@app.route('/predict',methods = ['GET','POST'])
+@app.route('/prediction',methods = ['GET','POST'])
 def prediction():
     if request.method == 'POST':
         data = request.form
@@ -23,7 +23,7 @@ def prediction():
         price = med_ins.get_predicted_price()
         print(price)
         #return jsonify({"Price:":price})
-        return render_template("home.html", prediction = np.around(np.exp(price),3))
+        return render_template("home.html", prediction = price)
         
 if __name__ == '__main__':
     app.run(host = '0.0.0.0', port = 5004,debug = True)    
